@@ -1,0 +1,23 @@
+{
+  "name": "atomic-wrapper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild index.js --bundle --outfile=build.js",
+    "prestart": "npm run build",
+    "start": "http-server -p 8080 -c-1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "esbuild": "^0.20.2"
+  },
+  "dependencies": {
+    "@coveo/atomic": "^2.64.1",
+    "http-server": "^14.1.1"
+  }
+}
